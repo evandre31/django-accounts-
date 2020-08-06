@@ -1,0 +1,9 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+    <h1>profile du</h1>
+{{ profile.user }}<br>  <!--pour accéder au field de profile -->
+{{ profile.user.email }} <br><!--pour accéder au field de user qui est relié au user -->
+{{ profile.phone }}<br>{{ profile.address }}
+{% endblock %}
